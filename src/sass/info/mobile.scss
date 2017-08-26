@@ -1,0 +1,70 @@
+& {
+  .logo li {
+    max-width: 100px;
+    margin: 5px;
+    img {
+      width: 100%;
+    }
+  }
+  .head-title {
+    margin-top: 20px;
+  }
+  .head-title h3 {
+    font-size: 20px;
+  }
+  .head-title h1 {
+    font-size: 35px;
+  }
+  .head-title h3.small {
+    font-size: 15px;
+  }
+  .head-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .head-box h4 {
+    font-size: 30px;
+  }
+  .head-box span {
+    font-size: 18px;
+  }
+  .head {
+    padding-bottom: 60px;
+    background-position: 10% center;
+  }
+  .start_info-content {
+    margin: 10px 0;
+  }
+  .reservation-btn {
+    font-size: 16px;
+  }
+  .last-title, .variant-title {
+    font-size: 30px;
+  }
+  .last-list {
+    background: none;
+    li {
+      padding-left: 0 !important;
+      text-align: center;
+    }
+  }
+  .varianr-box {
+    overflow: hidden;
+  }
+  .varianr-box .box-left, .varianr-box .box-right {
+    padding: 5px;
+  }
+  .varianr-box .icon {
+    margin-bottom: 0;
+  }
+  .choice-btn {
+    font-size: 18px;
+    &.no {
+      margin-bottom: 10px;
+    }
+  }
+  .strategy {
+    overflow: hidden;
+  }
+}
