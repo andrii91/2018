@@ -3,6 +3,52 @@
 @media #{$tabletPortrait} {
     @import '../mobile';
   	& {
-     
+      .head-title h1 {
+        font-size: 100px;
+      }
+      .head-title h3.small {
+        font-size: 30px;
+      }
+      .head-title h3 {
+        font-size: 35px;
+      }
+      .varianr-box .box-left:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        left: -9px;
+        z-index: 0;
+        background: #f6f6f6;
+    }
+      .last-list li {
+        text-align: left;
+      }
+      .where-box {
+        max-width: 315px;
+        vertical-align: top;
+      }
+      .where-box h3 {
+        font-size: 32px;
+      }
+
+      .price-box {
+          max-width: 240px;
+      }
+      .price-box .box-title {
+        margin: 0 4px;
+      }
+      .price-list li {
+        font-size: 12px;
+        padding: 15px 20px;
+      }
+      .price-list li.active {
+          padding: 15px 20px;
+      }
+      .footer {
+        background-position: 65% bottom;
+      }
 	}
 }

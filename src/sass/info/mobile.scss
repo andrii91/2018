@@ -21,9 +21,9 @@
   .head-box {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 10px; 
   }
-  .head-box h4 {
+  .head-box h4 { 
     font-size: 30px;
   }
   .head-box span {
@@ -39,7 +39,7 @@
   .reservation-btn {
     font-size: 16px;
   }
-  .last-title, .variant-title {
+  .last-title, .variant-title, .smm218-title, .strategy-title, .smm_info-box h2, .plan-title, .programs-title, .slide-title, .sectionsmm-title, .support_program-title {
     font-size: 30px;
   }
   .last-list {
@@ -66,5 +66,138 @@
   }
   .strategy {
     overflow: hidden;
+  }
+  .variant {
+    padding-bottom: 30px;
+  }
+  .smm218, .reviews, .smm_info, .plan, .programs {
+    padding: 30px 0;
+  }
+  .smm218-list li {
+    font-size: 18px;
+  }
+  .strategy {
+    padding: 70px 0 30px;
+  }
+  .strategy-list li span {
+    font-size: 15px;
+  }
+  .owl-nav .owl-next {
+    margin-right: -20px;
+  }
+  .owl-nav .owl-prev {
+    margin-left: -20px;
+  }
+  .smm_info-box ul li {
+    padding-left: 50px;
+    font-size: 20px;
+  }
+  .plan-info, .plan-box p {
+    font-size: 20px;
+  }
+  .block-img {
+    margin-bottom: 5px;
+  }
+  .plan-box h3 {
+    font-size: 24px;
+  }
+  .plan-box p {
+    margin-bottom: 30px;
+  }
+  .programs-box .box-img .img {
+    height: 100%;
+  }
+  .programs-box .box-img:before, .slide-title:before {
+    display: none;
+  }
+  .programs-box.right .box-img .img-number {
+    margin-top: 10px;
+  }
+  .mar-top-50 {
+    margin-top: 0;
+  }
+  .programs-box .box-img .img-number {
+    font-size: 180px;
+  }
+  .sectionsmm {
+    padding: 30px 0 60px;
+  }
+  .sectionsmm-info {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .speaker {
+    padding: 30px 0;
+    img {
+      width: 100%;
+    }
+  }
+  .speaker-title {
+    font-size: 40px;
+  }
+  .support_program-nav {
+    display: none;
+  }
+  .rule-img, .why .why-img {
+    width: 100%;
+    float: none;
+  }
+  .rule-title, .where-title {
+    font-size: 35px;
+  }
+  .why-box {
+    right: 0;
+    margin-top: 0;
+  }
+  .why-box {
+    padding: 15px;
+  }
+  .where {
+    padding: 30px 0;
+  }
+  .where-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .which_will-title, .price-title {
+    font-size: 30px;
+  }
+  .which_will-info {
+    font-size: 20px;
+  }
+  .which_will-img {
+    img {
+      width: 100%;
+    }
+  }
+  .which_will-img:before {
+    display: none;
+  }
+  .price-box {
+    padding: 20px;
+  }
+  .price-box .box-title {
+    font-size: 15px;
+  }
+  .price-list li.active {
+    padding: 9px 20px;
+  }
+  .price-btn {
+    font-size: 18px;
+    padding: 25px 10px;
+  }
+  .price {
+    padding-bottom: 70px;
+  }
+  .questions {
+    padding: 20px;
+  }
+  .row {
+    .row {
+      margin: 0;
+    }
+  }
+  section {
+    overflow-x: hidden;
   }
 }
