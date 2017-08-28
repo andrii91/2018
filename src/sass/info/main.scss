@@ -896,6 +896,12 @@ color: #191919;
     max-height: 550px;
     overflow-y: scroll;
   }
+  &.pay {
+    max-width: 500px;
+    width: 100%;
+    max-height: 550px;
+    overflow-y: scroll;
+  }
 }
 
 
@@ -1621,17 +1627,20 @@ font-weight: 400;
 }
 
 .rule {
-  padding:  40px 0;
+  padding:  10px 0 40px;
   max-width: 1600px;
   margin: 0 auto;
+  position: relative;
 }
 
 .rule-img {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-right: 20px;
-/*  width: 43.5625vw;
+  width: 43.5625vw;
   min-width: 300px;
-  max-width: 697px;*/
+  max-width: 697px;
 }
 
 .rule-title {
@@ -1651,20 +1660,20 @@ font-weight: 400;
 
 .rule-list {
   list-style: none;
-  padding: 120px 0 0;
+  padding: 90px 0 0;
   margin: 0;
   background: url('../images/quote-gray.png') no-repeat left 15px;
   li {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     h5 {
       color: #191919;
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 400;
       line-height: 1;
     }
     p{
       color: #191919;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       list-style: none;
     }
@@ -1674,8 +1683,15 @@ font-weight: 400;
 .why {
   max-width: 1600px;
   margin: 0 auto;
+  position: relative;
   .why-img {
     float: right;
+    position: absolute;;
+    top: 0;
+    right: 0;
+       width: 43.5625vw;
+  min-width: 300px;
+  max-width: 697px; 
   }
 }
 
@@ -1685,7 +1701,7 @@ font-weight: 400;
   border-radius: 6px;
   background-color: #ffffff;
   padding: 44px 54px;
-      right: -90px;
+      /*right: -90px;*/
   position: relative;
  margin-top: 70px;
   h2 {
@@ -2063,5 +2079,22 @@ font-weight: 400;
       top: -15px;
       left: -25px;
     }
+  }
+}
+.widget {
+  padding: 60px 0;
+  text-align: center;
+}
+.price-box-title {
+  font-size: 28px;
+}
+.pay-btn {
+  margin-top: 30px;
+}
+.pay-list {
+  margin: 0;
+  text-align: left;
+  li {
+    font-size: 18px;
   }
 }
