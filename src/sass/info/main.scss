@@ -624,6 +624,7 @@ color: #191919;
     max-width: 49%;
     min-width: 260px;
     position: relative;
+    cursor: none;
     &:before {
       content: "";
       background: url('../images/lbg.png') no-repeat;
@@ -701,6 +702,13 @@ color: #191919;
       }
     }
     &.yes {
+      cursor: pointer;
+      &:hover {
+        &:before {
+          opacity: 1;
+          animation: none;
+        }
+      }
       &:before {
         content: "";
         width: 135px;
@@ -711,9 +719,23 @@ color: #191919;
         left: 50%;
         transform: translateX(-47%) translateY(-45%);
         border-radius: 50%;
+        -webkit-animation: rainbow 1.5s linear 1.5s infinite;
+        animation: rainbow 1.5s linear 1.5s infinite;
       }
     }
   }
+}
+ 
+@-webkit-keyframes rainbow {
+0% {opacity: 0.3;}
+50% {opacity: 1;}
+100% {opacity: 0.3}
+}
+ 
+@keyframes rainbow {
+0% {opacity: 0.3;}
+50% {opacity: 1;}
+100% {opacity: 0.3}
 }
 
 .choice {
@@ -822,7 +844,7 @@ font-weight: 400;
 }
 
 .strategy {
-  padding: 195px 0 70px;
+  padding: 70px 0 70px;
 }
 
 .strategy-title {
@@ -1313,7 +1335,7 @@ color: #191919;
   max-width: 558px;
   .content {
     max-width: 512px;
-    min-height: 302px;
+    /*min-height: 302px;*/
     box-shadow: 0 10px 25px rgba(25, 25, 25, 0.29);
     background-color: #ffffff;
     margin: 0 auto;
@@ -1682,8 +1704,9 @@ font-weight: 400;
 
 .why {
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 60px auto;
   position: relative;
+  min-height: 77vh;
   .why-img {
     float: right;
     position: absolute;;
@@ -1795,6 +1818,9 @@ border-radius: 6px;
 .which_will-block {
   clear: both;
   margin-bottom: 80px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &.right {
     .which_will-img {
       
@@ -1873,7 +1899,7 @@ border-radius: 6px;
 }
 
 .price {
-  padding: 50px 0 142px;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -1908,8 +1934,9 @@ color: #191919;
       font-size: 50px;
       margin-bottom: 66px;
     }
-    p {
-      margin-bottom: 75px;
+    .price-info {
+
+      margin-bottom: 245px;
     }
   }
   h3 {
@@ -1919,13 +1946,33 @@ color: #191919;
     line-height: 1;
     margin-bottom: 50px;
   }
-  p {
-    color: #191919;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1;
+  .price-info {
+    padding: 0;
+    margin: 0;
     margin-bottom: 60px;
-    text-align: left;
+    list-style: none;
+     &.mb345 {
+        margin-bottom: 345px;
+      }
+      li {
+        color: #191919;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        text-align: left;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 12px;
+        &:before{
+          content:"-";
+          font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
   }
   .box-title {
     color: #191919;
